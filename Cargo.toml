@@ -6,7 +6,7 @@ rust-version = "1.91.0"
 description = "Property-based and model-based invariant testing library for Soroban smart contracts"
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/stellar/soroban-invariants"
+repository = "https://github.com/Devops-escrow/soroban-invariants"
 keywords = ["soroban", "stellar", "testing", "property-testing", "invariants"]
 categories = ["development-tools::testing", "cryptography::cryptocurrencies"]
 

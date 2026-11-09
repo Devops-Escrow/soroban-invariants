@@ -1,8 +1,6 @@
 # soroban-invariants
 
-[![CI](https://github.com/stellar/soroban-invariants/actions/workflows/ci.yml/badge.svg)](https://github.com/stellar/soroban-invariants/actions/workflows/ci.yml)
-[![Crates.io](https://img.shields.io/crates/v/soroban-invariants.svg)](https://crates.io/crates/soroban-invariants)
-[![Docs.rs](https://docs.rs/soroban-invariants/badge.svg)](https://docs.rs/soroban-invariants)
+[![CI](https://github.com/Devops-escrow/soroban-invariants/actions/workflows/ci.yml/badge.svg)](https://github.com/Devops-escrow/soroban-invariants/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/status-beta-orange.svg)]()
 
