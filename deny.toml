@@ -1,0 +1,46 @@
+[graph]
+targets = []
+
+[output]
+feature-depth = 1
+
+[advisories]
+ignore = [
+    # Transitive dependencies of soroban-sdk 29.0.1 / soroban-env-host
+    { id = "RUSTSEC-2024-0436", reason = "Transitive dependency `paste` used in soroban-env-host/ark-ff; unmaintained notice" },
+    { id = "RUSTSEC-2026-0387", reason = "Transitive dependency `crypto-bigint 0.5.5` used in soroban-env-host; pending upstream SDF upgrade" },
+]
+
+[licenses]
+allow = [
+    "MIT",
+    "Apache-2.0",
+    "Apache-2.0 WITH LLVM-exception",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "ISC",
+    "Unicode-3.0",
+    "Unicode-DFS-2016",
+    "OpenSSL",
+    "Zlib",
+]
+confidence-threshold = 0.8
+
+[[licenses.clarify]]
+name = "ring"
+expression = "MIT AND ISC AND OpenSSL"
+license-files = [
+    { path = "LICENSE", hash = 0xbd0eed23 }
+]
+
+[bans]
+multiple-versions = "warn"
+wildcards = "allow"
+highlight = "all"
+deny = []
+
+[sources]
+unknown-registry = "warn"
+unknown-git = "warn"
+allow-registry = ["https://github.com/rust-lang/crates.io-index"]
+allow-git = []

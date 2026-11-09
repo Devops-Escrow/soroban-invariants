@@ -1,0 +1,20 @@
+[package]
+name = "soroban-invariants"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.91.0"
+description = "Property-based and model-based invariant testing library for Soroban smart contracts"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/stellar/soroban-invariants"
+keywords = ["soroban", "stellar", "testing", "property-testing", "invariants"]
+categories = ["development-tools::testing", "cryptography::cryptocurrencies"]
+
+[dependencies]
+soroban-sdk = { version = "29.0.1", features = ["testutils"] }
+proptest = { version = "1.12.0", default-features = false, features = ["std"] }
+thiserror = "2.0"
+
+[dev-dependencies]
+soroban-sdk = { version = "29.0.1", features = ["testutils"] }
+proptest = { version = "1.12.0", default-features = false, features = ["std"] }
